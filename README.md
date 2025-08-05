@@ -1,1 +1,9 @@
 # API_NODE2
+
+THUNDERCLINT (VS code)
+
+POSTMAN
+
+INSOMNIA
+
+SWAGGER (documentar API)
