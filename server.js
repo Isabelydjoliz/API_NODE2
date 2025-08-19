@@ -21,9 +21,11 @@ app.post('/cadastro', async (req,res)=>{
     res.status(201).json(req.body)
 })
 
-app.get('/cadastro',(req,res)=>{
-    //res.send('DEU BOM NO GET!')
-    res.status(200).json(usuarios)
+app.get('/cadastro', async (req,res)=>{
+   
+    const lista_usuarios = await prisma.usuario.findMany()
+
+    res.status(200).json(lista_usuarios)
 
 })
 
